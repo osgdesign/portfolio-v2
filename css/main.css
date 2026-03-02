@@ -500,7 +500,7 @@ footer {
     display: none;
   }
 
-  /* 타이틀 항상 표시 및 하단 20% 배치 */
+  /* 타이틀 항상 표시 및 하단 10% 배치 */
   .short > ul.short-list > li > a > div.short-title {
     opacity: 1; /* 마우스 호버 없이 항상 보임 */
     top: auto;
