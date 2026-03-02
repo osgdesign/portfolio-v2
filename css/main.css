@@ -495,6 +495,35 @@ footer {
   .short > ul > li > a > img {
     width: 100%;
   }
+  /* 쇼츠 버튼 숨김 */
+  .short-btn {
+    display: none;
+  }
+
+  /* 타이틀 항상 표시 및 하단 20% 배치 */
+  .short > ul.short-list > li > a > div.short-title {
+    opacity: 1; /* 마우스 호버 없이 항상 보임 */
+    top: auto;
+    bottom: 0;
+    height: 10%; /* 하단 10% 높이 */
+    background-color: rgba(0, 0, 0, 0.7); /* 배경 투명도 조정 */
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  /* 텍스트 크기 조정 및 아이콘 숨김 */
+  .short > ul.short-list > li > a > div.short-title > span {
+    font-size: 1.4rem; /* 텍스트 크기 축소 */
+    margin-bottom: 0;
+    white-space: nowrap; /* 글자가 넘치지 않게 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .short > ul.short-list > li > a > div.short-title > img {
+    display: none; /* 아이콘 숨김 */
+  }
+
   #contact {
     margin: 100px 0px;
   }
@@ -635,6 +664,30 @@ footer {
   .short > ul > li > a > img {
     width: 100%;
   }
+  /* 타이틀 항상 표시 및 하단 10% 배치 */
+  .short > ul.short-list > li > a > div.short-title {
+    opacity: 1;
+    top: auto;
+    bottom: 0;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+  }
+
+  /* 텍스트 스타일 및 아이콘 조정 */
+  .short > ul.short-list > li > a > div.short-title > span {
+    font-size: 1.45rem;
+    margin-bottom: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 5px;
+  }
+
+  .short > ul.short-list > li > a > div.short-title > img {
+    display: none;
+  }
+
   #contact {
     display: flex;
     flex-direction: column;
